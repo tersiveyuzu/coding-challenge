@@ -13,9 +13,8 @@ $ docker-compose up -d                                               # start the
 - set an environment variable ZAMMAD_TOKEN
 $ python3 -m venv .venv                                              # create your virtual environment
 $ source .venv/bin/activate                                          # activate your virtual environment
+$ cd src                                                             # change directory
 $ pip install -r requirements.txt                                    # install packages
 $ python main.py                                                     # run extract, transform, update functions via api
 ```
-
-
 
