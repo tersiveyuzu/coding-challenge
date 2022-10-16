@@ -1,0 +1,1 @@
+sentiment_dict = {'POS': 1, 'NEU': 2, 'NEG': 3}
