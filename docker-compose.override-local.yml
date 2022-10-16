@@ -6,9 +6,6 @@ services:
   zammad-backup:
     image: zammad-postgresql-local
 
-  zammad-elasticsearch:
-    image: zammad-elasticsearch-local
-
   zammad-init:
     image: zammad-local
 
