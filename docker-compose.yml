@@ -29,6 +29,7 @@ services:
       - POSTGRESQL_USER=${POSTGRES_USER}
       - POSTGRESQL_PASS=${POSTGRES_PASS}
       - REDIS_URL=${REDIS_URL}
+      - ELASTICSEARCH_ENABLED=false
     image: ${IMAGE_REPO}:zammad${VERSION}
     restart: on-failure
     volumes:

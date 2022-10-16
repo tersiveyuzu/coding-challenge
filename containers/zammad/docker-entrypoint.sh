@@ -3,7 +3,7 @@
 set -e
 
 : "${AUTOWIZARD_JSON:=''}"
-: "${ELASTICSEARCH_ENABLED:=true}"
+: "${ELASTICSEARCH_ENABLED:=false}"
 : "${ELASTICSEARCH_HOST:=zammad-elasticsearch}"
 : "${ELASTICSEARCH_PORT:=9200}"
 : "${ELASTICSEARCH_SCHEMA:=http}"
