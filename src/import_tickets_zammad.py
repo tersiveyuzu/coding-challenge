@@ -30,6 +30,8 @@ def transform_data(data):
         data.columns = ['body', 'subject']
 
     data = data.reset_index()
+    data['body'] = data['body'] + ' - ' + data['index'].astype(str)
+    data['subject'] = data['subject'] + ' - ' + data['index'].astype(str)
 
     return data
 
