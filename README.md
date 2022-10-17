@@ -19,8 +19,9 @@ $ python src/main.py                                                 # run extra
 ```
 
 
+
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/115954094/196153122-c807ae58-0889-4352-896a-0e659d227bd4.png">
 
-<img width="1245" alt="image" src="https://user-images.githubusercontent.com/115954094/196153055-1a27e140-cf6a-4745-9453-e0d0605ce8c9.png">
+<img width="1240" alt="image" src="https://user-images.githubusercontent.com/115954094/196154661-cffe3ae8-5a7f-4d21-925b-9224e1efbef1.png">
 
-<img width="1037" alt="image" src="https://user-images.githubusercontent.com/115954094/196152583-24c20aab-04eb-4bef-80c8-410a7194f066.png">
+<img width="1245" alt="image" src="https://user-images.githubusercontent.com/115954094/196153055-1a27e140-cf6a-4745-9453-e0d0605ce8c9.png">
