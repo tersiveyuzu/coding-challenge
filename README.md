@@ -11,10 +11,9 @@ $ docker-compose up -d                                               # start the
 - go to http://localhost:8080
 - create an auth token with maximum permissions
 - set an environment variable ZAMMAD_TOKEN
-$ virtualenv venv --python=python3.8                           # create your virtual environment
-$ source venv/bin/activate                                          # activate your virtual environment
+$ virtualenv venv --python=python3.8                                 # create your virtual environment
+$ source venv/bin/activate                                           # activate your virtual environment
 $ cd src                                                             # change directory
 $ pip install -r requirements.txt                                    # install packages
-$ python main.py                                                     # run extract, transform, update functions via api
+$ python main.py                                                     # run extract, transform, update tickets via api
 ```
-
