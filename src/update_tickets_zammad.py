@@ -27,6 +27,8 @@ def predict_tickets(df):
 def update_tickets(df):
 
     ticket_api = TicketAPI()
+    list_tickets = ticket_api.list_tickets()
+    index_diff = list_tickets[-1]['id'] - len(df) + 1
 
-    for i in range(len(df)):
-        ticket_api.update_ticket(df['index'][i], df['sentiment_mapping'][i])
+    for i in range(list_tickets[0]['id'], list_tickets[-1]['id']):
+        ticket_api.update_ticket(i, df['sentiment_mapping'][i - index_diff])
