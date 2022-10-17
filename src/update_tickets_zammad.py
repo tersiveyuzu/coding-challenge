@@ -1,5 +1,6 @@
 from pysentimiento import create_analyzer
 import pandas as pd
+import constants
 from ticket import TicketAPI
 
 
@@ -9,19 +10,17 @@ def predict_tickets(df):
 
     sentiment_predictions = analyzer.predict(df['body'])
 
-    list_0 = []
+    empty_list = []
 
     for i in range(len(sentiment_predictions)):
-        list_0.append(sentiment_predictions[i].output)
+        empty_list.append(sentiment_predictions[i].output)
 
-    df_predictions = pd.DataFrame(list_0)
+    df_predictions = pd.DataFrame(empty_list)
 
     df_enriched = pd.concat([df, df_predictions], axis=1)
     df_enriched.columns = ['index', 'complains', 'issue', 'sentiment']
 
-    sentiment_dict = {'POS': 1, 'NEU': 2, 'NEG': 3}
-
-    df_enriched['sentiment_mapping'] = df_enriched['sentiment'].map(sentiment_dict)
+    df_enriched['sentiment_mapping'] = df_enriched['sentiment'].map(constants.sentiment_dict)
     return df_enriched
 
 
